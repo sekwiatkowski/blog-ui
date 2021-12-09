@@ -3,11 +3,11 @@ import NoticeElement from '../NoticeElement';
 import { Header } from './styles';
 import { colors } from '../styles/theme';
 
-export default function HeaderElement({ setMenuOpen, logo, children, noticeText }) {
+export default function HeaderElement({ setMenuOpen, logo, children, noticeText, className }) {
     return (
         <>
             <NoticeElement>{noticeText}</NoticeElement>
-            <Header className='d-flex w-100'>
+            <Header className={`d-flex w-100${className ? ` ${className}` : ''}`}>
                 <div className='container d-flex w-100 justify-content-between align-items-center small-text'>
                     <div className='d-flex align-items-center responsive'>
                         <span id='logo'>Logo</span>

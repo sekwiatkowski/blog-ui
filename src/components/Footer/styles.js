@@ -64,7 +64,7 @@ export const FooterInfo = styled.div`
         }
     }
 
-    @media (max-width: 435px) {
+    @media (max-width: 560px) {
         .social-media {
             flex-direction: column;
             gap: 1rem;

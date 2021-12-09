@@ -1,10 +1,10 @@
 import React from 'react';
 import { NoticeDiv } from './styles';
 
-export default function NoticeElement({ text }) {
+export default function NoticeElement({ children }) {
     return (
         <NoticeDiv>
-            <div className='container'>{text}</div>
+            <div className='container'>{children}</div>
         </NoticeDiv>
     );
 }

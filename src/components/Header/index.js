@@ -6,7 +6,7 @@ import { colors } from '../styles/theme';
 export default function HeaderElement({ setMenuOpen, logo, children, noticeText }) {
     return (
         <>
-            <NoticeElement text={noticeText} />
+            <NoticeElement>{noticeText}</NoticeElement>
             <Header className='d-flex w-100'>
                 <div className='container d-flex w-100 justify-content-between align-items-center small-text'>
                     <div className='d-flex align-items-center responsive'>

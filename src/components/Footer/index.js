@@ -14,11 +14,12 @@ export default function Footer({ children, notice, socialMedia, className }) {
                 <div className='container d-flex align-items-center justify-content-between'>
                     <span>{notice}</span>
                     <div className='social-media'>
-                        {socialMedia.map((item, index) => (
-                            <a href={item.link} rel='noopener noreferrer' key={index}>
-                                {item.text}
-                            </a>
-                        ))}
+                        {socialMedia &&
+                            socialMedia.map((item, index) => (
+                                <a href={item.link} rel='noopener noreferrer' key={index}>
+                                    {item.text}
+                                </a>
+                            ))}
                     </div>
                 </div>
             </FooterInfo>

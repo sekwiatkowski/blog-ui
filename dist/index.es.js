@@ -23,12 +23,10 @@ import*as e from"react";import t from"react";import n from"styled-components";co
         color: ${e=>e.light?r:i};
     } */
     :hover {
-        background: ${a};
-        color: ${r} !important;
+        background: ${e=>e.light?l:a};
     }
     :active {
-        background: ${l};
-        color: ${r} !important;
+        background: ${e=>e.light?a:l};
     }
     /* ::before {
         color: ${r} !important;
@@ -99,7 +97,7 @@ import*as e from"react";import t from"react";import n from"styled-components";co
             font-size: 3rem;
         }
     }
-`,p=n.div`
+`,g=n.div`
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -132,7 +130,7 @@ import*as e from"react";import t from"react";import n from"styled-components";co
             gap: 1rem;
         }
     }
-`;function g({children:t,notice:n,socialMedia:i,className:o}){return e.createElement(e.Fragment,null,e.createElement(f,{className:""+(o?` ${o}`:"")},e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("div",{className:"d-flex align-items-center flex-wrap gap-responsive"},t),e.createElement("span",{className:"footer-logo"},"Logo"))),e.createElement(p,null,e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("span",null,n),e.createElement("div",{className:"social-media"},i&&i.map(((t,n)=>e.createElement("a",{href:t.link,rel:"noopener noreferrer",key:n},t.text)))))))}const h=n.div`
+`;function p({children:t,notice:n,socialMedia:i,className:o}){return e.createElement(e.Fragment,null,e.createElement(f,{className:""+(o?` ${o}`:"")},e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("div",{className:"d-flex align-items-center flex-wrap gap-responsive"},t),e.createElement("span",{className:"footer-logo"},"Logo"))),e.createElement(g,null,e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("span",null,n),e.createElement("div",{className:"social-media"},i&&i.map(((t,n)=>e.createElement("a",{href:t.link,rel:"noopener noreferrer",key:n},t.text)))))))}const h=n.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,4 +226,4 @@ import*as e from"react";import t from"react";import n from"styled-components";co
         right: 40px;
         cursor: pointer;
     }
-`;function b({menuOpen:t,setMenuOpen:n,children:i}){return e.createElement(w,{className:"position-fixed w-100 vh-100 d-flex justify-content-center align-items-center flex-column",menuOpen:t},i,e.createElement("svg",{id:"close-menu",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",width:30,height:30,fill:r,onClick:()=>n(!1)},e.createElement("path",{d:"M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"})))}export{c as Button,d as CookieWarning,g as Footer,v as Header,b as MobileNav,u as NoticeElement};
+`;function b({menuOpen:t,setMenuOpen:n,children:i}){return e.createElement(w,{className:"position-fixed w-100 vh-100 d-flex justify-content-center align-items-center flex-column",menuOpen:t},i,e.createElement("svg",{id:"close-menu",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",width:30,height:30,fill:r,onClick:()=>n(!1)},e.createElement("path",{d:"M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"})))}export{c as Button,d as CookieWarning,p as Footer,v as Header,b as MobileNav,u as NoticeElement};

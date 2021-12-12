@@ -26,11 +26,11 @@ export const Button = styled.span`
         color: ${props => (props.light ? colors.black : colors.white)};
     } */
     :hover {
-        background: ${colors.hover};
+        background: ${props => (props.light ? colors.hover : colors.active)};
         color: ${colors.black} !important;
     }
     :active {
-        background: ${colors.active};
+        background: ${props => (props.light ? colors.active : colors.hover)};
         color: ${colors.black} !important;
     }
     /* ::before {

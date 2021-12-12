@@ -24,9 +24,11 @@ import*as e from"react";import t from"react";import n from"styled-components";co
     } */
     :hover {
         background: ${e=>e.light?l:a};
+        color: ${r};
     }
     :active {
         background: ${e=>e.light?a:l};
+        color: ${r};
     }
     /* ::before {
         color: ${r} !important;

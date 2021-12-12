@@ -24,9 +24,11 @@
     } */
     :hover {
         background: ${e=>e.light?d:m};
+        color: ${s};
     }
     :active {
         background: ${e=>e.light?m:d};
+        color: ${s};
     }
     /* ::before {
         color: ${s} !important;

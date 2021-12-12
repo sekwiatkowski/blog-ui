@@ -12,7 +12,7 @@ export const Button = styled.span`
     font-weight: 600;
     transition: all 0.4s ease 0s;
     z-index: 0;
-    ::before {
+    /* ::before {
         content: '';
         position: absolute;
         inset: 0px;
@@ -21,14 +21,25 @@ export const Button = styled.span`
         transform-origin: right center;
         background: ${props => (props.light ? colors.white : colors.black)};
         z-index: -1;
-    }
-    :hover {
+    } */
+    /* :hover {
         color: ${props => (props.light ? colors.black : colors.white)};
+    } */
+    :hover {
+        background: ${colors.hover};
+        color: ${colors.black} !important;
     }
-    :hover::before {
+    :active {
+        background: ${colors.active};
+        color: ${colors.black} !important;
+    }
+    /* ::before {
+        color: ${colors.black} !important;
+    } */
+    /* :hover::before {
         transform: scale(1, 1);
         transform-origin: left center;
-    }
+    } */
     @media (max-width: 575px) {
         padding: 0.4rem 1.5rem;
     }

@@ -26,7 +26,7 @@ export const Header = styled.header`
         position: absolute;
         width: 100%;
     }
-    .icon {
+    .icon:first-child {
         margin-right: 2.8rem;
     }
     #menu-icon {

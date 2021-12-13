@@ -171,6 +171,9 @@
     }
     .icon:first-child {
         margin-right: 2.8rem;
+        @media (max-width: 385px) {
+            margin-right: 1rem;
+        }
     }
     #menu-icon {
         display: none;

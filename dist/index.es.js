@@ -132,7 +132,7 @@ import*as e from"react";import t from"react";import n from"styled-components";co
             gap: 1rem;
         }
     }
-`;function p({children:t,notice:n,socialMedia:i,className:o}){return e.createElement(e.Fragment,null,e.createElement(f,{id:"footer-section",className:""+(o?` ${o}`:"")},e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("div",{className:"d-flex align-items-center flex-wrap gap-responsive"},t),e.createElement("span",{className:"footer-logo"},"Logo"))),e.createElement(g,null,e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("span",null,n),e.createElement("div",{className:"social-media"},i&&i.map(((t,n)=>e.createElement("a",{href:t.link,rel:"noopener noreferrer",key:n},t.text)))))))}const h=n.div`
+`;function p({children:t,notice:n,socialMedia:i,className:o}){return e.createElement(e.Fragment,null,e.createElement(f,{className:""+(o?` ${o}`:"")},e.createElement("div",{id:"footer-section",className:"container d-flex align-items-center justify-content-between"},e.createElement("div",{className:"d-flex align-items-center flex-wrap gap-responsive"},t),e.createElement("span",{className:"footer-logo"},"Logo"))),e.createElement(g,null,e.createElement("div",{className:"container d-flex align-items-center justify-content-between"},e.createElement("span",null,n),e.createElement("div",{className:"social-media"},i&&i.map(((t,n)=>e.createElement("a",{href:t.link,rel:"noopener noreferrer",key:n},t.text)))))))}const h=n.div`
     display: flex;
     align-items: center;
     justify-content: center;

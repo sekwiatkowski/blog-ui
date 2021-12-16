@@ -143,7 +143,7 @@
     justify-content: center;
     background: ${s};
     color: ${l};
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     font-family: 'Montserrat-Light', sans-serif;
     strong {
         font-family: 'Montserrat-Bold', sans-serif;

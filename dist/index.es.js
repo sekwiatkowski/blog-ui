@@ -143,7 +143,7 @@ import*as e from"react";import t from"react";import n from"styled-components";co
     justify-content: center;
     background: ${r};
     color: ${i};
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     font-family: 'Montserrat-Light', sans-serif;
     strong {
         font-family: 'Montserrat-Bold', sans-serif;

@@ -7,7 +7,7 @@ export const NoticeDiv = styled.div`
     justify-content: center;
     background: ${colors.black};
     color: ${colors.white};
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     font-family: 'Montserrat-Light', sans-serif;
     strong {
         font-family: 'Montserrat-Bold', sans-serif;

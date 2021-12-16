@@ -13,7 +13,7 @@ export default function HeaderElement({ setMenuOpen, logo, children, noticeText,
             <Header className={`d-flex w-100${className ? ` ${className}` : ''}`}>
                 <div className='container d-flex w-100 justify-content-between align-items-center small-text'>
                     <div className='d-flex align-items-center responsive'>
-                        <span id='logo'>Logo</span>
+                        {logo ? <img id='logo' src={logo} /> : <span id='logo'>Logo</span>}
                         {children}
                         <svg
                             id='menu-icon'

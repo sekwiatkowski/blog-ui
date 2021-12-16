@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FooterInfo, FooterSection } from './styles';
 
-export default function Footer({ children, notice, socialMedia, className }) {
+export default function Footer({ children, logo, notice, socialMedia, className }) {
     return (
         <>
             <FooterSection className={`${className ? ` ${className}` : ''}`}>
@@ -9,7 +9,7 @@ export default function Footer({ children, notice, socialMedia, className }) {
                     <div id='footer-section' className='d-flex align-items-center flex-wrap gap-responsive'>
                         {children}
                     </div>
-                    <span className='footer-logo'>Logo</span>
+                    {logo ? <img className='footer-logo' src={logo} /> : <span className='footer-logo'>Logo</span>}
                 </div>
             </FooterSection>
             <FooterInfo>

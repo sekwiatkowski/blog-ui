@@ -9,6 +9,9 @@ export const Header = styled.header`
     border-bottom: 1px solid ${colors.gray};
     #logo {
         margin-right: 6rem;
+        max-width: 110px;
+        width: 100%;
+        height: auto;
     }
     .nav-link-element {
         position: relative;

@@ -9,7 +9,13 @@ export default function Footer({ children, logo, notice, socialMedia, className 
                     <div id='footer-section' className='d-flex align-items-center flex-wrap gap-responsive'>
                         {children}
                     </div>
-                    {logo ? <img className='footer-logo' src={logo} /> : <span className='footer-logo'>Logo</span>}
+                    {logo ? (
+                        <div className='footer-logo'>
+                            <img src={logo} />
+                        </div>
+                    ) : (
+                        <span className='footer-logo'>Logo</span>
+                    )}
                 </div>
             </FooterSection>
             <FooterInfo>

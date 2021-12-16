@@ -3,7 +3,7 @@ import NoticeElement from '../NoticeElement';
 import { Header } from './styles';
 import { colors } from '../styles/theme';
 
-export default function HeaderElement({ setMenuOpen, logo, children, noticeText, className, socialMedia = [] }) {
+export default function HeaderElement({ setMenuOpen, logo, children, noticeText, className, socialMedia = [{ type: null }] }) {
     const instagram = socialMedia.filter(item => item.type === 'instagram')[0];
     const youtube = socialMedia.filter(item => item.type === 'youtube')[0];
 

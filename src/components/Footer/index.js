@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FooterInfo, FooterSection } from './styles';
+import { FooterInfo, FooterSection, FooterLogo } from './styles';
 
 export default function Footer({ children, logo, notice, socialMedia, className }) {
     return (
@@ -9,13 +9,7 @@ export default function Footer({ children, logo, notice, socialMedia, className 
                     <div id='footer-section' className='d-flex align-items-center flex-wrap gap-responsive'>
                         {children}
                     </div>
-                    {logo ? (
-                        <div className='footer-logo'>
-                            <img src={logo} />
-                        </div>
-                    ) : (
-                        <span className='footer-logo'>Logo</span>
-                    )}
+                    {logo ? <FooterLogo className='footer-logo'>{logo}</FooterLogo> : <span className='footer-logo'>Logo</span>}
                 </div>
             </FooterSection>
             <FooterInfo>

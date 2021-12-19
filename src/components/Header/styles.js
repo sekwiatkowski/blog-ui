@@ -7,12 +7,6 @@ export const Header = styled.header`
     color: ${colors.black};
     max-height: 87px;
     border-bottom: 1px solid ${colors.gray};
-    #logo {
-        margin-right: 6rem;
-        max-width: 110px;
-        width: 100%;
-        height: auto;
-    }
     .nav-link-element {
         position: relative;
         color: ${colors.black};
@@ -61,5 +55,13 @@ export const Header = styled.header`
         #menu-icon {
             margin-right: 1rem;
         }
+    }
+`;
+export const Logo = styled.div`
+    margin-right: 6rem;
+    img {
+        max-width: 110px;
+        width: 100%;
+        height: auto;
     }
 `;

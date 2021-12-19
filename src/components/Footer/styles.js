@@ -22,11 +22,6 @@ export const FooterSection = styled.div`
         margin-left: 1rem;
         font-size: 4.7rem;
         font-weight: 200;
-        img {
-            max-width: 230px;
-            width: 100%;
-            height: auto;
-        }
     }
     .gap-responsive {
         row-gap: 2rem;
@@ -74,5 +69,12 @@ export const FooterInfo = styled.div`
             flex-direction: column;
             gap: 1rem;
         }
+    }
+`;
+export const FooterLogo = styled.div`
+    img {
+        max-width: 230px;
+        width: 100%;
+        height: auto;
     }
 `;
